@@ -18,8 +18,16 @@ class Solution{
     }
     long long countWays(int n, int k){
         // code here
-        vector<long long> dp(n+1,-1);
-        return util(n,k,dp) % mod;
+        vector<long long> dp(n+1,0);
+        // return util(n,k,dp) % mod;
+        dp[1] = k % mod;
+        dp[2] = (k*k) % mod;
+        for (int i=3;i<=n;i++){
+            long long a=dp[i-2] % mod;
+            long long b=dp[i-1] % mod;
+            dp[i] = (a+b)*(k-1) % mod;
+        }
+        return dp[n];
     }
 };
 
