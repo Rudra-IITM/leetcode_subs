@@ -16,10 +16,10 @@ graph = {{1, 1, 0, 1},
 <pre><span style="font-size: 14pt;"><strong>Input:</strong> N = 3
 graph = {{1, 0, 0}, 
 &nbsp;        {0, 1, 0}, 
-&nbsp;        {0, 0, 1}
+&nbsp;        {0, 0, 1}}
 <strong>Output:</strong> {{1, 0, 0}, 
 &nbsp;        {0, 1, 0}, 
-&nbsp;        {0, 0, 1}
+&nbsp;        {0, 0, 1}}
 <strong>Explanation: <br></strong>The output list shows the reachable indexes.</span></pre>
 <p><span style="font-size: 18px;"><strong>Your Task:</strong><br>You do not need to read input or print anything. Your task is to complete the function <strong>transitiveClosure()</strong> which takes an integer <strong>N</strong> and a 2D array <strong>graph</strong>(adjacency matrix of the graph)<strong>&nbsp;</strong>as <strong>input parameters </strong>and returns the <strong>transitive closure </strong>of the graph in the form of <strong>2D array</strong>.</span></p>
 <p><span style="font-size: 18px;"><strong>Expected Time Complexity:</strong> O(N<sup>3</sup>)<br><strong>Expected Auxiliary Space:</strong> O(N<sup>2</sup>)</span></p>
